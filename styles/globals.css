@@ -17,47 +17,17 @@ body {
   align-items: center;
   justify-content: center;
   padding: 24px;
-  position: relative;
-  overflow: hidden;
-  background:
-    radial-gradient(circle at top, rgba(0, 255, 140, 0.08), transparent 30%),
-    linear-gradient(180deg, #050505 0%, #0d0d0d 100%);
-}
-
-.bgGlow {
-  position: absolute;
-  border-radius: 999px;
-  filter: blur(80px);
-  opacity: 0.22;
-  pointer-events: none;
-}
-
-.glow1 {
-  width: 280px;
-  height: 280px;
-  background: #00ff88;
-  top: 8%;
-  left: -60px;
-}
-
-.glow2 {
-  width: 240px;
-  height: 240px;
-  background: #00c853;
-  bottom: 6%;
-  right: -40px;
+  background: #050505;
 }
 
 .card {
   width: 100%;
   max-width: 420px;
-  background: rgba(12, 12, 12, 0.88);
+  background: #111;
   border: 1px solid rgba(0, 255, 136, 0.22);
   border-radius: 24px;
   padding: 28px 22px;
   box-shadow: 0 0 40px rgba(0, 255, 136, 0.12);
-  position: relative;
-  z-index: 1;
 }
 
 .badge {
@@ -75,8 +45,7 @@ body {
 .title {
   margin: 0 0 10px;
   font-size: 40px;
-  line-height: 0.95;
-  letter-spacing: 1px;
+  line-height: 1;
 }
 
 .xp {
@@ -106,41 +75,24 @@ body {
 }
 
 .challengeBox,
-.rewardBox,
-.timer {
+.rewardBox {
   border-radius: 18px;
-  background: #111;
+  background: #1a1a1a;
   border: 1px solid rgba(0, 255, 136, 0.2);
   text-align: center;
+  padding: 22px 16px;
 }
 
 .challengeBox {
-  padding: 22px 16px;
   font-size: 24px;
   font-weight: 800;
   line-height: 1.2;
 }
 
 .rewardBox {
-  padding: 22px 16px;
   font-size: 28px;
   font-weight: 900;
   color: #00ff88;
-}
-
-.timer {
-  padding: 24px 16px;
-  font-size: 64px;
-  font-weight: 900;
-  color: #00ff88;
-}
-
-.challengeText {
-  margin: 0;
-  text-align: center;
-  color: #e8e8e8;
-  font-size: 18px;
-  font-weight: 700;
 }
 
 .hint {
@@ -150,8 +102,7 @@ body {
   line-height: 1.4;
 }
 
-.primaryBtn,
-.secondaryBtn {
+.primaryBtn {
   width: 100%;
   border: none;
   border-radius: 16px;
@@ -159,28 +110,6 @@ body {
   font-size: 16px;
   font-weight: 800;
   cursor: pointer;
-  transition: transform 0.15s ease, opacity 0.15s ease;
-}
-
-.primaryBtn {
   background: #00ff88;
   color: #07110b;
-}
-
-.secondaryBtn {
-  background: #1a1a1a;
-  color: #f4f4f4;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.primaryBtn:hover,
-.secondaryBtn:hover {
-  transform: translateY(-1px);
-  opacity: 0.96;
-}
-
-.buttonRow {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
 }
