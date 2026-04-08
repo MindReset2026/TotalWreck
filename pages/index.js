@@ -115,7 +115,7 @@ export default function Home() {
           <div className="badge altBadge">SCORE {score}</div>
         </div>
 
-        <h1 className="title">TOTAL WRECK</h1>
+        <h1 className="title">TOTAL WRECK X</h1>
 
         {screen === "start" && (
           <div className="panel">
